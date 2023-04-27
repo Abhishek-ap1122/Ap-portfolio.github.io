@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="foot-nav.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Abhishek's Portfolio</title>
+
+</head>
+
+<style>
+
+    body{
+        background-color: #2c0d56;
+    }
+
+    .calc-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .calc-main-in{
+        border-radius: 15%;
+        width: 475px;
+        height: 422.5px;
+        margin: 1.5% 10% 2.15% 10%;
+        background-color: #853158;
+        text-align: center;
+        place-items: center;
+        display: inline-block;
+        box-shadow: 0 0 5rem 0 black;
+    }
+    
+    h1 {
+        border-radius: 2.5rem;
+        box-shadow: 0 0 0.5rem 0 white;
+        margin: auto;
+    }
+    
+    table {
+        margin: 5% 15% 0 15%;
+        height: 80%;
+        width: 70%;
+    }
+    
+    input {
+        box-shadow: 0 0 0.5rem 0 white;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 0.5rem 1.5rem 0.5rem 1.5rem;
+        height: 70%;
+        width: 90%;
+    }
+    
+    button {
+        box-shadow: 0 0 0.5rem 0 white;
+        font-size: 20px;
+        border-radius: 1rem 0.5rem 1rem 0.5rem;
+        background-color: #aa356b;
+        height: 90%;
+        width: 90%;
+        color: yellow;
+        border: 2px solid red;
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <nav>
+            <a class="name-link" href="./index.html">AP's Portfolio
+                <!-- <h1>AP's Portfolio</h1> -->
+            </a>
+
+            <span class="start-1st">
+                <span class="start-2nd">
+                    <span class="start-3rd">
+                        <span class="start-4th">
+                            <a href="./index.html">
+                                <img src="mine.png" alt="Profile picture">
+                            </a>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </nav>
+
+    </header>
+
+
+
+
+    <div class="calc-main">
+        <div class="calc-main-in">
+            <table>
+                <tr>
+                    <th colspan="4">
+
+                        <h1>CALCULATOR</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4"> &#160</th>
+                </tr>
+                <tr>
+
+                    <th colspan="4"> &#160</th>
+                </tr>
+                <tr>
+                    <th colspan="4"><input type="input" placeholder="Enter your problem" id="input" name="screen"></th>
+                </tr>
+                <tr>
+                    <th colspan="4"> &#160</th>
+                </tr>
+                <tr>
+                    <th><button>C</button></th>
+                    <th><button>%</button></th>
+                    <th><button>/</button></th>
+                    <th><button>x</button></th>
+                </tr>
+                <tr>
+                    <th><button>7</button></th>
+                    <th><button>8</button></th>
+                    <th><button>9</button></th>
+                    <th><button>-</button></th>
+                </tr>
+                <tr>
+                    <th><button>4</button></th>
+                    <th><button>5</button></th>
+                    <th><button>6</button></th>
+                    <th><button>+</button></th>
+                </tr>
+                <tr>
+                    <th><button>1</button></th>
+                    <th><button>2</button></th>
+                    <th><button>3</button></th>
+                    <th rowspan="2"><button>=</button></th>
+
+                </tr>
+                <tr>
+                    <th colspan="2"><button>0</button></th>
+                    <th><button>.</button></th>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <ul>
+            <li class="hashtag">
+                <a href="./more.html">
+                    <h3>more</h3>
+                    <img src="./bicon/plus-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="github">
+                <a href="">             
+                    <h3>social</h3>
+                    <img src="./bicon/hashtag-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="house">
+                <a href="">
+                    <h3>home</h3>
+                    <img src="./bicon/house-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="about">
+                <a href="./about.html">
+                    <h3>about</h3>
+                    <img src="./bicon/book-open-reader-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="contact">
+                <a href="./contact.html">
+                    <h3>contact</h3>
+                    <img src="./bicon/phone-solid.svg" alt="">
+                </a>
+            </li>
+        </ul>
+
+
+
+<!-- <script src="all.js"></script> -->
+</body>
+
+<script>
+    // javascript code for calculator
+
+let screen = document.getElementById('input');
+buttons = document.querySelectorAll('button');
+let ValueOfScreen = '';
+for (item of buttons) {
+    item.addEventListener('click', (x) => {
+        let buttonval = x.target.innerText;
+        console.log("value of this button is :-", buttonval)
+        if (buttonval == 'x') {
+            buttonval = '*';
+            ValueOfScreen += buttonval;
+            screen.value = ValueOfScreen;
+            console.log("what are you doing", screen)
+        } else if (buttonval == 'C') {
+            ValueOfScreen = "";
+            screen.value = ValueOfScreen;
+        } else if (buttonval == '=') {
+            screen.value = eval(ValueOfScreen);
+        } else if (buttonval == '&#8592') {
+            ValueOfScreen -= buttonval;
+        } else {
+            ValueOfScreen += buttonval;
+            screen.value = ValueOfScreen;
+        }
+    });
+}
+
+</script>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="foot-nav.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+    <style>
+
+        .smain{
+            height: 456.5px;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            background-color: #2c0d56;
+        }
+        .sinsta, .sface, .sgit, .slinkdin, .stwitter{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            color: #45e3ff;
+            border-radius: 50px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px 25px 10px 25px;
+            text-transform: uppercase;
+            background-color: #a3002f;
+        }
+        .sinsta img, .sface img, .sgit img, .slinkdin img, .stwitter img{
+            margin: 0 5% 0 0;
+            height: 80px;
+        }
+        .sinsta h2, .sface h2, .sgit h2, .slinkdin h2, .stwitter h2{
+            display: none;
+            font-size: 0px;
+            transform: rotateZ(0deg);
+        }
+        .sinsta a, .sface a, .sgit a, .slinkdin a, .stwitter a{
+            color: #45e3ff;
+        }
+        .sface, .slinkdin{
+            float: right;
+        }
+        .sinsta:hover, .sface:hover, .sgit:hover, .slinkdin:hover, .stwitter:hover{
+            transition-duration: 1s;
+            transform: rotateZ(45deg);
+            animation: color-s 1.5s linear infinite;
+        }
+        @keyframes color-s {
+            0%{
+                box-shadow: 0 0 2.5rem 0 #45e3ff;
+            }
+            50%{
+                box-shadow: 0 0 2rem 0 #a3002f;
+            }
+            100%{
+                box-shadow: 0 0 2.50rem 0 #45e3ff;
+            }
+        }
+        .sinsta:hover img, .sface:hover img, .sgit:hover img, .slinkdin:hover img, .stwitter:hover img{
+            height: 0px;
+            transition-duration: 1s;
+            transform: rotateZ(-45deg);
+        }
+        .sinsta:hover h2, .sface:hover h2, .sgit:hover h2, .slinkdin:hover h2, .stwitter:hover h2{
+            transition-duration: 1s;
+            transition-delay: 2s;
+            font-size: 36px;
+            transform: rotateZ(-45deg);
+
+            animation: size-f 1s linear 1;
+            display: block;
+        }
+        @keyframes size-f {
+            0%{
+                font-size: 0px;
+            }
+            100%{
+                font-size: 36px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+
+            <span id="n1">
+                <a class="name-link" href="./index.html">AP's Portfolio
+                    <!-- <h1>AP's Portfolio</h1> -->
+                </a>
+            </span>
+
+            
+            
+            <span id="s-1-4">
+                <span class="start-1st">
+                    <span class="start-2nd">
+                        <span class="start-3rd">
+                            <span class="start-4th">
+                                <a href="./index.html">
+                                    <img src="mine.png" alt="Profile picture">
+                                </a>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </nav>
+
+    </header>
+
+
+    <div class="smain">
+        <span class="sinsta">
+            <a href="https://www.instagram.com/itsabhishek_ap23/">
+                <img src="./social media icons/instagram.png" alt="" srcset="">
+                <h2>Instagram</h2>
+            </a>
+        </span>
+        
+        <span class="sface">
+            <a href="https://www.facebook.com/profile.php?id=100013814431007">
+                <img src="./social media icons/facebook.png" alt="">
+                <h2>facebook</h2>
+            </a>
+        </span>
+        
+        <span class="slinkdin">
+            <a href="https://www.linkedin.com/in/abhishek-prajapati-9a57b4206/">
+                <img src="./social media icons/linkedin.png" alt="" srcset="">
+                <h2>linkedin</h2>
+            </a>
+        </span>
+
+        <span class="stwitter">
+            <a href="https://twitter.com/ap_abhishek024">
+                <img src="./social media icons/twitter.png" alt="" srcset="">
+                <h2>twitter</h2>
+            </a>
+        </span>
+
+    </div>
+
+
+    
+    <footer>
+        <ul>
+            <li class="hashtag">
+                <a href="">
+                    <h3>social</h3>
+                    <img src="./bicon/hashtag-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="github">
+                <a href="">             
+                    <h3>github</h3>
+                    <img src="./bicon/github-square-brands.svg" alt="">
+                </a>
+            </li>
+            <li class="house">
+                <a href="">
+                    <h3>home</h3>
+                    <img src="./bicon/house-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="about">
+                <a href="">
+                    <h3>about</h3>
+                    <img src="./bicon/book-open-reader-solid.svg" alt="">
+                </a>
+            </li>
+            <li class="contact">
+                <a href="">
+                    <h3>contact</h3>
+                    <img src="./bicon/phone-solid.svg" alt="">
+                </a>
+            </li>
+        </ul>
+
+
+
+    </footer>
+
+
+
+</body>
+</html>

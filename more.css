@@ -1,0 +1,77 @@
+
+.maiin{
+    display: flex;
+    color: #45e3ff;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    margin: -1.55% 0% 0% 0%;
+    text-transform: uppercase;
+    background-color: #2c0d56;
+}
+
+.st1-div,.st2-div{
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    background-color: #a3002f;
+    animation: shadow 1.25s linear infinite;
+}
+@keyframes shadow {
+    0%{
+        box-shadow: 0 0 0.5rem 0 #45e3ff;
+    }
+    50%{
+        box-shadow: 0 0 2.5rem 0 #a3002f;
+    }
+    100%{
+        box-shadow: 0 0 2.5rem 0 #45e3ff;
+    }
+}
+
+
+.st1-div{
+    margin: 17.5% 0% 10% 0%;
+    border-radius: 0 75px 75px 0;
+}
+
+.st2-div{
+    float: right;
+    margin: 17.5% 0% 10% 10.95%;
+    border-radius: 75px 0 0 75px;
+}
+.st1-div h1,.st2-div h1{
+    margin: 12.5% 0% 0% 0%;
+}
+.st1-div:hover h1,.st2-div:hover h1{
+    transition-duration: 1s;
+    font-size: 0px;
+}
+.st1-in, .st2-in{
+    visibility: hidden;
+    border-radius: 25px;
+    margin: 0% 12.5% 0% 12.5%;
+    width: 0;
+    color: #2c0d56;
+    background-color: #45e3ff;
+    text-align: center;
+}
+.st1-in ul,.st2-in ul{
+    margin: -19% 0% 0% 0%;
+    list-style: none;
+}
+.st1-in ul li,.st2-in ul li{
+    font-size: 0px;
+    margin: 1.5% 0% 2.5% 0%;
+}
+.st1-div:hover .st1-in,.st2-div:hover .st2-in{
+    width: 65%;
+    visibility: visible;
+    transition-delay: 1s;
+    transition-duration: 2.5s;
+}
+.st1-div:hover .st1-in ul li,.st2-div:hover .st2-in ul li{
+    font-size: 24px;
+    transition-delay: 2.5s;
+    transition-duration: 2.5s;
+}

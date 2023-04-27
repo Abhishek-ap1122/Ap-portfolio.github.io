@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/* 
+color codes
+    #a162f7 dark blue
+    #6f88fc light blue
+    #45e3ff cream
+    #fefff1 light cream
+    */
+::-webkit-scrollbar{
+    height: 8px;
+    overflow: hidden;
+	width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    border-top: 1px solid #2c0d56;
+    border-bottom: 1px solid #2c0d56;
+    box-shadow: 0rem 0rem 1.5rem 1rem #45e3ff;
+	background-color: #45e3ff;
+}
+::-webkit-scrollbar-track{
+    border-left: 1px solid #45e3ff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #2c0d56;
+}
+
+
+header {
+    animation: full-page 7.5s linear 1;
+    height: 100px;
+    background-color: #2c0d56;
+}
+
+nav {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#n1{
+    height: auto;
+    width: 50vw;
+}
+#n1 a {
+    width: auto;
+}
+
+.name-link {
+    color: #45e3ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 2.5% 0% 0% 10%;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.name-link:hover {
+    background-color: #45e3ff;
+    box-shadow: 0rem 0rem 1.5rem 0rem #45e3ff;
+    transition-duration: 1s;
+    border-radius: 34px;
+}
+
+
+#s-1-4{
+    overflow-x: hidden;
+    height: auto;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.start-1st {
+    position: relative;
+    margin: 8.5% -15.5% 0% 0%;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    border: 2.5px solid rgb(69 227 255 / 35%);
+}
+
+.start-2nd {
+    position: absolute;
+    inset: 10% 0% 0% 10.5%;
+    border-radius: 50%;
+    height: 310px;
+    width: 310px;
+    border: 2.5px solid rgb(69 227 255 / 40%);
+}
+
+.start-3rd {
+    position: absolute;
+    inset: 15% 0% 0% 13%;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    border: 2.5px solid rgb(69 227 255 / 60%);
+}
+
+.start-4th {
+    position: absolute;
+    inset: 19% 0% 0% 20%;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    border: 2.5px solid rgb(69 227 255 / 80%);
+}
+
+.start-4th a {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    inset: 17.5% 0% 0% 20%;
+}
+
+.start-4th a:hover {
+    transition-duration: 1s;
+    border-radius: 50%;
+    animation: shad 2s linear infinite;
+}
+@keyframes shad {
+    0%{
+        box-shadow: 0rem 0rem 3rem 0rem #541aa3;
+    }
+    50%{
+        box-shadow: 0rem 0rem 3rem 2.5rem #541aa3;
+    }
+    100%{
+        box-shadow: 0rem 0rem 3rem 0rem #541aa3;
+    }
+}
+
+.start-4th a img {
+    border-radius: 50%;
+    height: 80px;
+}
+
+
+/* --------------------------------------------------- */
+/* |      bottom section or foooter start here       | */
+/* --------------------------------------------------- */
+
+footer {
+    margin-top: 0;
+    height: 100px;
+    background-color: #45e3ff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    margin: 1.25% 0% 0% 0%;
+    border-radius: 50%;
+}
+
+footer ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer ul li a img {
+    height: 40px;
+}
+
+footer ul li a h3 {
+    color: #45e3ff;
+    display: none;
+    font-size: 20px;
+}
+
+footer ul .foot-li:hover {
+    box-shadow: 0rem 0rem 1.5rem 0rem #541aa3;
+    transition-duration: 1.25s;
+    border-radius: 70px;
+    background-color: #2c0d56;
+
+}
+
+footer ul li:hover a img {
+    display: none;
+}
+
+footer ul li:hover a h3 {
+    margin: 0% 5% 0% 5%;
+    display: block;
+}
+
+.hashtag:hover {
+    width: 150px;
+}
+
+.github:hover {
+    width: 150px;
+}
+
+.house:hover {
+    width: 150px;
+}
+
+.about:hover {
+    width: 150px;
+}
+
+.contact:hover {
+    width: 150px;
+}
+
+
+
+@media screen and (max-width:852px) {
+    body{
+        /* height: 100vh; */
+        /* overflow-y: hidden; */
+    }
+    
+}
